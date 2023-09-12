@@ -1,4 +1,5 @@
-[![Code style: autopep8](https://img.shields.io/badge/code%20style-autopep8-000000.svg)](https://github.com/psf/black)
+[![Python 2.6 2.7 3.7](https://img.shields.io/badge/python-2.6%20%7C%202.7%20%7C%203.7-blue.svg)](https://www.python.org/)
+[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
 ![GitHub release (latest by date including pre-releases)](https://img.shields.io/github/v/release/maximumfx/tk-houdini-splashscreen?include_prereleases)
 [![GitHub issues](https://img.shields.io/github/issues/maximumfx/tk-houdini-splashscreen)](https://github.com/maximumfx/tk-houdini-splashscreen/issues)
 # tk-houdini-splashscreen

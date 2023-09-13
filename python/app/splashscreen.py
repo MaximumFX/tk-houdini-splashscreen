@@ -133,7 +133,7 @@ class Splashscreen:
 
             # Add text
             if "19.5" in version:
-                cmd.extend(['--text:x=445:y=200:size=40', project_name])
+                cmd.extend(['--text:x=443:y=265:size=28:font=Arial', project_name])
 
             # Set output
             cmd.extend([

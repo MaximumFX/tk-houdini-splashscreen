@@ -47,7 +47,7 @@ class Splashscreen:
         project = sg.find_one(
             'Project',
             [['id', 'is', current_context.project.get('id')]],
-            ['billboard', 'name']
+            ['billboard', 'name', 'sg_working_title']
         )
 
         # Check if project has billboard
@@ -55,6 +55,10 @@ class Splashscreen:
             return
 
         billboard_url = project.get('billboard').get('url')
+
+        project_name = project.get('name')
+        if project.get('sg_working_title') is not None:
+            project_name = project.get('sg_working_title')
 
         # TODO check default value
         splash_file = self.app.get_template("splash_screen_template").apply_fields({})
@@ -93,7 +97,7 @@ class Splashscreen:
         if render_splash:
             self.logger.debug('Creating new splash file.')
             self.__create_splash(oiiotool, '800x415', 'white', 312, '+445+172', billboard_url, tmp_splash_file,
-                                 tmp_splash_png, splash_file, project.get('name'), version)
+                                 tmp_splash_png, splash_file, project_name, version)
         else:
             self.logger.debug('Splash file exists, skipping creation.')
 

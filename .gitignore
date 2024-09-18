@@ -1,0 +1,9 @@
+# discard vscode lint settings
+.vscode
+
+# discard all pyc files
+*.pyc
+
+# Project settings
+.idea/
+.vscode

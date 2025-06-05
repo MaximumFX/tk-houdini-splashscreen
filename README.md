@@ -6,6 +6,8 @@
 
 `tk-houdini-splashscreen` is a Shotgun Toolkit app to customize the Splash screen to the Project billboard.
 
+![Example Splash Screen](./resources/example_splash_screen.png)
+
 ## Installation
 
 Add the `tk-houdini-splashscreen` app to the tk-desktop engine.
